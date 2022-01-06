@@ -1,0 +1,344 @@
+/* =========================================================================
+ * BASE
+ * ========================================================================= */
+
+/* HTML
+ * ------------------------------------------------------------------------- */
+
+html {
+  height: 100%;
+}
+
+/* BODY
+ * ------------------------------------------------------------------------- */
+
+body {
+  display: flex;
+
+  margin: 0;
+
+  min-width: var(--dom--min-width);
+  min-height: 100%;
+
+  flex-direction: column;
+
+  font-family: "Roboto", sans-serif;
+}
+
+body::before {
+  content: "";
+
+  display: block;
+
+  position: fixed;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  filter: grayscale(25%);
+  background-image: url("./../images/products/djur.jfif");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* =========================================================================
+ * LINKS
+ * ========================================================================= */
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+/* =========================================================================
+ * BUTTON
+ * ========================================================================= */
+
+.button {
+  display: flex;
+
+  box-sizing: border-box;
+  max-width: 100%;
+
+  align-items: center;
+}
+
+.button--round {
+  border-radius: 50%;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button > *:not(:first-child) {
+  margin-left: var(--offset--small);
+}
+
+/* =========================================================================
+ * LAYOUT
+ * ========================================================================= */
+
+.l-header {
+  display: flex;
+  justify-content: center;
+}
+
+.l-header__body {
+  display: flex;
+
+  box-sizing: border-box;
+  padding: var(--offset--medium);
+  max-width: var(--dom--max-width);
+  width: 100%;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l-header__body > *:not(:first-child) {
+  margin-left: var(--offset--large);
+}
+
+.l-main {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.l-main__body {
+  display: flex;
+
+  max-width: var(--dom--max-width);
+  width: 100%;
+  padding-bottom: var(--offset--medium);
+
+  flex-direction: column;
+
+  background-color: var(--color--dark-white);
+}
+
+.l-main__body > *:not(:first-child):not(.is-adjoined) {
+  margin-top: var(--offset--medium);
+}
+
+.l-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.l-footer__body {
+  display: flex;
+
+  box-sizing: border-box;
+  max-width: var(--dom--max-width);
+  width: 100%;
+  padding: var(--offset--x-large) var(--offset--medium);
+
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--color--white);
+}
+
+.l-footer__body > *:not(:first-child) {
+  margin-top: var(--offset--medium);
+}
+
+/* =========================================================================
+ * HEADER ELEMENTS
+ * ========================================================================= */
+
+.brand-logo {
+  flex-shrink: 0;
+  width: 128px;
+}
+
+.menu-container {
+  display: flex;
+
+  flex-grow: 1;
+  width: 0;
+
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.menu-container > *:not(:first-child) {
+  margin-top: var(--offset--small);
+}
+
+.menu {
+  display: flex;
+
+  max-width: 100%;
+
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.menu__item {
+  display: inline-flex;
+
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: var(--offset--small);
+
+  align-items: center;
+
+  border-radius: var(--border--radius--small);
+
+  color: var(--color--lite-grey);
+}
+
+.menu__item:not(:first-child) {
+  margin-left: var(--offset--small);
+}
+
+.menu--main > a.menu__item {
+  color: var(--color--white);
+}
+
+.menu--secondary > a.menu__item {
+  color: var(--color--theme--main);
+}
+
+a.menu__item:hover {
+  cursor: pointer;
+}
+
+.menu--main > a.menu__item:hover {
+  background-color: var(--color--dark-grey);
+}
+
+.menu--secondary > a.menu__item:hover {
+  background-color: var(--color--theme--main);
+  color: var(--color--white);
+}
+
+.menu__item > *:not(:first-child) {
+  margin-left: var(--offset--small);
+}
+
+/* =========================================================================
+ * MAIN ELEMENTS
+ * ========================================================================= */
+
+.banner {
+  background-size: contain;
+}
+
+.page-title {
+  margin-left: var(--offset--medium);
+  margin-right: var(--offset--medium);
+  color: var(--color--x-dark-grey);
+}
+
+.collection--horizontal.product-collection {
+  padding: var(--offset--small);
+  justify-content: space-around;
+}
+
+.collection--horizontal.product-collection > .collection__item {
+  padding: var(--offset--small);
+}
+
+.product {
+  display: flex;
+
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 578px;
+  padding: var(--offset--small);
+
+  background-color: var(--color--white);
+}
+
+.product > *:not(:first-child) {
+  margin-left: var(--offset--small);
+}
+
+.product__image {
+  flex-shrink: 0;
+  max-width: 50%;
+  width: 950px;
+  height: 350px;
+}
+
+.product__info {
+  display: flex;
+
+  box-sizing: border-box;
+  padding: var(--offset--small);
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product__info > *:not(:first-child) {
+  margin-top: var(--offset--small);
+}
+
+.product__title {
+  color: var(--color--x-dark-grey);
+}
+
+.product__description {
+  color: var(--color--dark-grey);
+}
+
+.product__price-line {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.product__price-line > *:not(:last-child) {
+  margin-right: var(--offset--medium);
+}
+
+.product__price {
+  color: var(--color--x-dark-grey);
+}
+
+.product__price--special {
+  color: var(--color--theme--secondary);
+}
+
+.product__button--cart {
+  padding: var(--offset--small);
+
+  border-radius: var(--border--radius--small);
+  background-color: green;
+
+  color: whitesmoke;
+}
+
+/* =========================================================================
+ * FOOTER ELEMENTS
+ * ========================================================================= */
+
+.collection--horizontal.social-network-list > .collection__item {
+  padding: var(--offset--x-small) var(--offset--small);
+}
+
+.footer__button--social {
+  padding: var(--offset--small);
+  background-color: rgb(41, 134, 241);
+  color: white;
+}
+
+.collection--horizontal.link-list > .collection__item {
+  padding: 0 var(--offset--small);
+}
+
+.copyright {
+  color: red;
+}

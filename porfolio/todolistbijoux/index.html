@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!---------- METADATA ---------->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Mes bijoux</title>
+
+    <!---------- FAVICON ---------->
+    <link rel="icon" type="image/png" href="./images/products/icon.png" />
+
+    <!---------- FONTS ---------->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    />
+
+    <!---------- STYLES ---------->
+
+    <!----- VENDOR: RESET CSS ----->
+    <link rel="stylesheet" href="./styles/reset.css" />
+
+    <!----- APP ----->
+    <link rel="stylesheet" href="./styles/dimensions.css" />
+    <link rel="stylesheet" href="./styles/themes.css" />
+    <link rel="stylesheet" href="./styles/lib.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <!---------- LAYOUT (START): HEADER ---------->
+    <header class="l-header">
+      <div class="l-header__body">
+        <!----- BRAND LOGO ----->
+        <a href="./index.html" class="image brand-logo">
+          <img src="./images/products/parure.png" alt="Brand Logo" />
+        </a>
+
+        <!----- MENU ----->
+        <div class="menu-container">
+          <nav class="menu menu--main">
+            <div class="menu__item">
+              <span class="text--oneline text--sized-down-2"
+                > Bienvenu sur mon site !</span
+              >
+            </div>
+            <a href="#" class="menu__item">
+              <i class="fas fa-list text--sized-down-3"></i>
+              <span
+                class="text--oneline text--uppercase text--sized-down-2 text--strong"
+                >Mes commandes</span
+              >
+            </a>
+            <a href="#" class="menu__item">
+              <i class="fas fa-user-circle text--sized-down-3"></i>
+              <span
+                class="text--oneline text--uppercase text--sized-down-2 text--strong"
+                >Mon compte</span
+              >
+            </a>
+            <a href="#" class="menu__item">
+              <i class="fas fa-sign-out-alt text--sized-down-3"></i>
+              <span
+                class="text--oneline text--uppercase text--sized-down-2 text--strong"
+                >Déconnexion</span
+              >
+            </a>
+          </nav>
+          <nav class="menu menu--secondary">
+            <a href="#" class="menu__item">
+              <i class="fas fa-shopping-cart text--sized-down-3"></i>
+              <span
+                class="text--oneline text--uppercase text--sized-down-2 text--strong"
+                >Panier</span
+              >
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!---------- LAYOUT (END): HEADER ---------->
+
+    <!---------- LAYOUT (START): MAIN ---------->
+    <main class="l-main">
+      <div class="l-main__body">
+        <div class="image banner">
+          <img src="./images/products/Femme-Kabyle.png" />
+        </div>
+
+        <!----- PAGE TITLE ----->
+        <h1
+          class="text--wrap text--sized-up-3 text--uppercase text--strong page-title"
+        >
+          Liste des produits (9) :
+        </h1>
+
+        <!----- PRODUCT LIST ----->
+        <ul class="collection--horizontal product-collection is-adjoined">
+          <li class="collection__item">
+            <div class="product">
+              <a href="#" class="image product__image">
+                <img src="./images/products/parure.png" alt="Product 1" />
+              </a>
+              <div class="product__info">
+                <a
+                  href="#"
+                  class="text--wrap text--sized-up-3 text--uppercase text--strong product__title"
+                >
+                  Lorem ipsum dolor sit amet
+                </a>
+                <p class="text--wrap text--sized-up-2 product__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ipsum ratione sint laudantium assumenda voluptatem cumque?
+                </p>
+                <div class="product__price-line">
+                  <span
+                    class="text--oneline text--sized-up-2 text--strong text--strikethrough product__price"
+                    >520 €</span
+                  >
+                  <span
+                    class="text--oneline text--sized-up-4 text--strong product__price--special"
+                    >430 €</span
+                  >
+                  <a href="#" class="button product__button--cart">
+                    <i class="fas fa-cart-plus text--sized-up-3"></i>
+                    <span
+                      class="text--oneline text--uppercase text--sized-up-1 text--strong"
+                      >Ajouter</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="collection__item">
+            <div class="product">
+              <a href="#" class="image product__image">
+                <img src="./images/products/parure3.jpg" alt="Product 2" />
+              </a>
+              <div class="product__info">
+                <a
+                  href="#"
+                  class="text--wrap text--sized-up-3 text--uppercase text--strong product__title"
+                >
+                  Lorem ipsum dolor sit amet
+                </a>
+                <p class="text--wrap text--sized-up-2 product__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ipsum ratione sint laudantium assumenda voluptatem cumque?
+                </p>
+                <div class="product__price-line">
+                  <span
+                    class="text--oneline text--sized-up-4 text--strong product__price"
+                    >490 €</span
+                  >
+                  <a href="#" class="button product__button--cart">
+                    <i class="fas fa-cart-plus text--sized-up-3"></i>
+                    <span
+                      class="text--oneline text--uppercase text--sized-up-1 text--strong"
+                      >Ajouter</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="collection__item">
+            <div class="product">
+              <a href="#" class="image product__image">
+                <img src="./images/products/boucle.png" alt="Product 3" />
+              </a>
+              <div class="product__info">
+                <a
+                  href="#"
+                  class="text--wrap text--sized-up-3 text--uppercase text--strong product__title"
+                >
+                  Lorem ipsum dolor sit amet
+                </a>
+                <p class="text--wrap text--sized-up-2 product__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ipsum ratione sint laudantium assumenda voluptatem cumque?
+                </p>
+                <div class="product__price-line">
+                  <span
+                    class="text--oneline text--sized-up-4 text--strong product__price"
+                    >138 €</span
+                  >
+                  <a href="#" class="button product__button--cart">
+                    <i class="fas fa-cart-plus text--sized-up-3"></i>
+                    <span
+                      class="text--oneline text--uppercase text--sized-up-1 text--strong"
+                      >Ajouter</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="collection__item">
+            <div class="product">
+              <a href="#" class="image product__image">
+                <img src="./images/products/bague.png" alt="Product 4" />
+              </a>
+              <div class="product__info">
+                <a
+                  href="#"
+                  class="text--wrap text--sized-up-3 text--uppercase text--strong product__title"
+                >
+                  Lorem ipsum dolor sit amet
+                </a>
+                <p class="text--wrap text--sized-up-2 product__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ipsum ratione sint laudantium assumenda voluptatem cumque?
+                </p>
+                <div class="product__price-line">
+                  <span
+                    class="text--oneline text--sized-up-2 text--strong text--strikethrough product__price"
+                    >120 €</span
+                  >
+                  <span
+                    class="text--oneline text--sized-up-4 text--strong product__price--special"
+                    >88 €</span
+                  >
+                  <a href="#" class="button product__button--cart">
+                    <i class="fas fa-cart-plus text--sized-up-3"></i>
+                    <span
+                      class="text--oneline text--uppercase text--sized-up-1 text--strong"
+                      >Ajouter</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="collection__item">
+            <div class="product">
+              <a href="#" class="image product__image">
+                <img src="./images/products/bague2.png" alt="Product 5" />
+              </a>
+              <div class="product__info">
+                <a
+                  href="#"
+                  class="text--wrap text--sized-up-3 text--uppercase text--strong product__title"
+                >
+                  Lorem ipsum dolor sit amet
+                </a>
+                <p class="text--wrap text--sized-up-2 product__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ipsum ratione sint laudantium assumenda voluptatem cumque?
+                </p>
+                <div class="product__price-line">
+                  <span
+                    class="text--oneline text--sized-up-4 text--strong product__price"
+                    >65 €</span
+                  >
+                  <a href="#" class="button product__button--cart">
+                    <i class="fas fa-cart-plus text--sized-up-3"></i>
+                    <span
+                      class="text--oneline text--uppercase text--sized-up-1 text--strong"
+                      >Ajouter</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="collection__item">
+            <div class="product">
+              <a href="#" class="image product__image">
+                <img src="./images/products/black.jpg" alt="Product 1" />
+              </a>
+              <div class="product__info">
+                <a
+                  href="#"
+                  class="text--wrap text--sized-up-3 text--uppercase text--strong product__title"
+                >
+                  Lorem ipsum dolor sit amet
+                </a>
+                <p class="text--wrap text--sized-up-2 product__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ipsum ratione sint laudantium assumenda voluptatem cumque?
+                </p>
+                <div class="product__price-line">
+                  <span
+                    class="text--oneline text--sized-up-2 text--strong text--strikethrough product__price"
+                    >125 €</span
+                  >
+                  <span
+                    class="text--oneline text--sized-up-4 text--strong product__price--special"
+                    >93 €</span
+                  >
+                  <a href="#" class="button product__button--cart">
+                    <i class="fas fa-cart-plus text--sized-up-3"></i>
+                    <span
+                      class="text--oneline text--uppercase text--sized-up-1 text--strong"
+                      >Ajouter</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="collection__item">
+            <div class="product">
+              <a href="#" class="image product__image">
+                <img src="./images/products/bracelet couleur.jpg" alt="Product 2" />
+              </a>
+              <div class="product__info">
+                <a
+                  href="#"
+                  class="text--wrap text--sized-up-3 text--uppercase text--strong product__title"
+                >
+                  Lorem ipsum dolor sit amet
+                </a>
+                <p class="text--wrap text--sized-up-2 product__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ipsum ratione sint laudantium assumenda voluptatem cumque?
+                </p>
+                <div class="product__price-line">
+                  <span
+                    class="text--oneline text--sized-up-4 text--strong product__price"
+                    >262 €</span
+                  >
+                  <a href="#" class="button product__button--cart">
+                    <i class="fas fa-cart-plus text--sized-up-3"></i>
+                    <span
+                      class="text--oneline text--uppercase text--sized-up-1 text--strong"
+                      >Ajouter</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="collection__item">
+            <div class="product">
+              <a href="#" class="image product__image">
+                <img src="./images/products/boucle3.jpg" alt="Product 3" />
+              </a>
+              <div class="product__info">
+                <a
+                  href="#"
+                  class="text--wrap text--sized-up-3 text--uppercase text--strong product__title"
+                >
+                  Lorem ipsum dolor sit amet
+                </a>
+                <p class="text--wrap text--sized-up-2 product__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ipsum ratione sint laudantium assumenda voluptatem cumque?
+                </p>
+                <div class="product__price-line">
+                  <span
+                    class="text--oneline text--sized-up-4 text--strong product__price"
+                    >172 €</span
+                  >
+                  <a href="#" class="button product__button--cart">
+                    <i class="fas fa-cart-plus text--sized-up-3"></i>
+                    <span
+                      class="text--oneline text--uppercase text--sized-up-1 text--strong"
+                      >Ajouter</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="collection__item">
+            <div class="product">
+              <a href="#" class="image product__image">
+                <img src="./images/products/bracelet.png.png" alt="Product 4" />
+              </a>
+              <div class="product__info">
+                <a
+                  href="#"
+                  class="text--wrap text--sized-up-3 text--uppercase text--strong product__title"
+                >
+                  Lorem ipsum dolor sit amet
+                </a>
+                <p class="text--wrap text--sized-up-2 product__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ipsum ratione sint laudantium assumenda voluptatem cumque?
+                </p>
+                <div class="product__price-line">
+                  <span
+                    class="text--oneline text--sized-up-2 text--strong text--strikethrough product__price"
+                    >269 €</span
+                  >
+                  <span
+                    class="text--oneline text--sized-up-4 text--strong product__price--special"
+                    >197 €</span
+                  >
+                  <a href="#" class="button product__button--cart">
+                    <i class="fas fa-cart-plus text--sized-up-3"></i>
+                    <span
+                      class="text--oneline text--uppercase text--sized-up-1 text--strong"
+                      >Ajouter</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!---------- LAYOUT (END): MAIN ---------->
+
+    <!---------- LAYOUT (START): FOOTER ---------->
+    <footer class="l-footer">
+      <div class="l-footer__body">
+        <!----- LINK LIST ----->
+        <ul class="collection--horizontal link-list">
+          <li class="collection__item">
+            <a
+              href="#"
+              class="text--oneline text--uppercase text--sized-down-2 text--strong link"
+              >Conditions de vente
+            </a>
+          </li>
+          <li class="collection__item">
+            <a
+              href="#"
+              class="text--oneline text--uppercase text--sized-down-2 text--strong link"
+              >FAQ
+            </a>
+          </li>
+          <li class="collection__item">
+            <a
+              href="#"
+              class="text--oneline text--uppercase text--sized-down-2 text--strong link"
+              >À propos
+            </a>
+          </li>
+        </ul>
+        <!----- SOCIAL NETWORK LIST ----->
+        <ul class="collection--horizontal social-network-list">
+          <li class="collection__item">
+            <a
+              href="https://facebook.com/"
+              target="_blank"
+              class="button button--round footer__button--social"
+            >
+              <i class="fab fa-facebook text--sized-up-3"></i>
+            </a>
+          </li>
+          <li class="collection__item">
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              class="button button--round footer__button--social"
+            >
+              <i class="fab fa-instagram text--sized-up-3"></i>
+            </a>
+          </li>
+          <li class="collection__item">
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="button button--round footer__button--social"
+            >
+              <i class="fab fa-twitter text--sized-up-3"></i>
+            </a>
+          </li>
+        </ul>
+        <!----- COPYRIGHT ----->
+        <span class="text--oneline text--sized-down-2 text--strong copyright"
+          >© 2021 Mes bijoux</span
+        >
+      </div>
+    </footer>
+    <!---------- LAYOUT (END): FOOTER ---------->
+
+    <!---------- SCRIPTS ---------->
+
+    <!----- VENDOR: FONT AWESOME ----->
+    <script
+      src="https://kit.fontawesome.com/e4895b9a2a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
